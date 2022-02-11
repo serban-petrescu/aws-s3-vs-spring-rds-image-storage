@@ -1,0 +1,11 @@
+spring.datasource:
+  url: jdbc:postgresql://localhost:5438/postgres
+  username: postgres
+  password: postgres
+
+flyway.clean-on-validation-error: true
+
+ro.msg.poc:
+  bucket: s3vsrdsimagesstack-bucket83908e77-y2x4twzkajf0
+  distDomain: d1cmj3o0bes002.cloudfront.net
+  keyId: K2X44Y2GLRPALA

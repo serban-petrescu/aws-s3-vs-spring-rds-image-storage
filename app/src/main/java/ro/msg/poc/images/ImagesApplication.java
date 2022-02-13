@@ -23,13 +23,13 @@ import org.springframework.web.bind.annotation.RestController;
 import ro.msg.poc.images.db.Tables;
 import ro.msg.poc.images.db.tables.records.ImageRecord;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
 import java.security.PrivateKey;
 import java.security.Security;
 import java.sql.Date;
 import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.Objects;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @SpringBootApplication
@@ -168,5 +168,11 @@ class PageController {
                 .collect(Collectors.toList()));
         model.addAttribute("title", "CF: Direct");
         return "index";
+    }
+
+    @GetMapping("/resp")
+    public String responsive(Model model) {
+        model.addAttribute("title", "CF: Direct");
+        return "responsive";
     }
 }

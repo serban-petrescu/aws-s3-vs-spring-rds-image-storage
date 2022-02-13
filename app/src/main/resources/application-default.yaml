@@ -6,6 +6,6 @@ spring.datasource:
 flyway.clean-on-validation-error: true
 
 ro.msg.poc:
-  bucket: s3vsrdsimagesstack-bucket83908e77-y2x4twzkajf0
-  distDomain: d1cmj3o0bes002.cloudfront.net
-  keyId: K2X44Y2GLRPALA
+  bucket: s3vsrdsimagesstack-storagebucket5cb7c8ea-12ctb3vpdf9m1
+  distDomain: d3868m77tv82em.cloudfront.net
+  keyId: K2916OSBBSS1KW
